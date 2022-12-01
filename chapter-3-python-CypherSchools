@@ -1,0 +1,124 @@
+#***********************************if-else statement***********************************
+age=input("enetr your age: ")
+age=int(age)
+if age >=18:
+    print("adult")
+else:
+    print("not adult")
+
+#********************************pass statement in python******************************
+
+x=17
+if x==17:
+    pass
+
+#***********************************nested loops*****************************************
+#exersise1; ch-3
+
+winning_number=17
+guess_number=int(input("Enter Number: "))
+if winning_number==guess_number:
+    print("YOU WON")
+else:
+    if winning_number > guess_number:
+        print("TOO LOW")
+    else:
+        if winning_number < guess_number:
+            print("TOO HIGH")
+        else:
+            pass
+#***************************************and, or operators******************************
+
+name, age=input().split(",")
+age=int(age)
+if name=="bhairav" and age==19:
+    print("ALLOWED")
+else:
+    print("not allowed")
+
+name=input()
+age=int(input())
+if name=="aditya" or age==18:
+    print("hello")
+else:
+    print("bye")
+
+#exersise2; ch-3
+
+name, age=input().split(",")
+age=int(age)
+if (name[0]=='a' or name[0]=='A') and age>10:
+    print("you can watch COCO movie")
+else:
+    print("you can not watch COCO movie")
+
+#*********************************elif statements in python*****************************
+
+marks=int(input("enter marks= "))
+if marks>=90:
+    print("A")
+elif marks>=80 and marks<90:
+    print("B")
+elif marks>=70 and marks<80:
+    print("C")
+else:
+    print("fail")
+
+#********************************keyword in python*************************************
+
+name=input()
+if 'a' in name:
+    print("yes")
+else:
+    print("no")
+
+#*************************empty and non-empty statement in python***********************
+
+x=input()
+if x:
+    print((f"you have typed {x}"))
+else:
+    print("you haven't typed any thing")
+
+#******************************************while loop**********************************
+
+i=1
+while i<=20:
+    print(i)
+    i+=1
+
+
+#exersise3; ch-3 (sum of n natural numbers)
+
+x=int(input("enter number= "))  
+sum=0
+i=1
+while i<=x:
+    sum=sum+i
+    i+=1
+
+print(sum)
+
+#exersise4; ch-3
+
+x=input("enter number= ")
+sum=0
+i=0
+while i<=len(x)-1:
+    sum=sum+int(x[i])
+    i+=1
+
+print(sum)
+
+#************************************************infinite loop***********************************************
+
+while True:
+    print("Nameste Duniya")
+
+#*********************************************for loop in python********************************************
+
+for i in range(5):
+   print("Nameste Duniya")
+
+for i in range(1,6):
+    print("{} Hello".format(i))

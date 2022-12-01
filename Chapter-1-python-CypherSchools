@@ -1,0 +1,72 @@
+#*************************************print function**********************************
+
+print("Hello world")
+
+#*************************************escape sequence*********************************
+# \\, \n, \t, \", \' 
+
+print("lineA \nlineB")
+
+print("x \ty")
+
+#****************************escape sequence as normal text***************************
+
+print("this is  \\\\ double backslash")
+
+print("this is  \\\" double quotation")
+
+print("this is  \\\' single quotation")
+
+print("this is  \\n ")
+
+print("this is  \\t ")
+
+
+
+#***********************************python as calculator********************************
+
+print(7/2)  #float division
+
+print(7//2) #int division
+
+print(7*2)  #multiplication
+
+print(7%2)  #modulus
+
+print(7+2)  #addition
+
+print(7-2)  #subtraction
+
+print(7**2) #exponent
+
+print((2+5)6//5-2*2) 
+
+
+#***********************************variables********************************************
+
+x=5
+print(x)
+
+x="RAM"
+print(x)
+
+x=0.19
+print(x)
+
+#****************************naming rules for variables*********************************
+
+name="raju"
+print(name)
+
+_name="raju"   
+print(name)
+
+#&name="raju"  (error){variable name should not be start with special symbols}
+
+#1name="raju"  (error){variable name should not be start with numbers}
+
+#*****************************convention for variable naming*****************************
+
+one_user="Bhairav"    #snake case writing
+
+OneUser="Bhairav"     #camel case writing

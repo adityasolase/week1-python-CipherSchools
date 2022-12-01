@@ -1,0 +1,104 @@
+#****************************************strings*****************************************
+x=input()
+y=input()
+print(x+y)
+print(int(x)+int(y))
+
+#*****************************taking multiple inputs in one line************************
+
+name, age=input("enter yout name and age= ").split()
+print(name)
+print(age)
+
+#*******************************string formatting*****************************************
+
+name="Bhairav"
+age=19
+print("hello" + name + "your age is" + str(age))
+print("hello {} your age is {}".format(name, age)) # python3
+print(f"hello {name} your age is {age}") #python 3.6
+
+#exersise 1; ch-2
+
+a,b,c=input("enter numbers=").split(",")
+avg=(int(a)+int(b)+int(c))/3
+print("average is {}".format(avg))
+print(f"average is {avg}")
+
+#*************************************string indexing**********************************
+
+name="Bhairav"
+print(name[0])
+print(name[1])
+print(name[2])
+print(name[3])
+print(name[4])
+print(name[5])
+print(name[6])
+
+print(name[-7])
+print(name[-6])
+print(name[-5])
+print(name[-4])
+print(name[-3])
+print(name[-2])
+print(name[-1])
+
+#**********************************string slicing****************************************
+
+name="Bhairav"
+print(name[0:4])
+print(name[4:])
+print(name[:7])
+
+print("FUTURE"[1:4])
+
+#***************************************step argument***********************************
+
+name="Bhairav"
+print(name[0:8:2])
+print(name[-1::-1])
+
+exersise2; ch-2
+
+name=input("Enter_Your_Name : ")
+print(name[-1::-1])
+
+#************************************methods in python**********************************
+
+name="BhAiRaV kUmAr"
+print(len(name))
+print(name.lower())
+print(name.upper())
+print(name.title())
+print(name.count("A"))
+
+exersise3; ch-2
+
+name1=input("enter your name: ")
+name2=name1.replace(" ","")
+char=input("enter char: ")
+print(len(name2))
+name3=name1.lower()
+print(name3.count(char))
+
+#***********************************strip in python**************************************
+
+name="      Bhairav       "
+title="Kumar"
+print(name+title)
+print(name.replace(" ","")+title)
+print(name.lstrip()+title)
+print(name.rstrip()+title)
+print(name.strip()+title)
+
+str1="Baby m a bad boy will you be my bad girl"
+print(str.replace(" ","_"))
+
+str2="i am good and i am bad as well"
+print(str2.find("am",3))
+
+#****************************center method in python************************************
+
+name=input("enter your name= ")
+print(name.center(len(name)+8,"*"))
